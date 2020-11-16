@@ -3,3 +3,5 @@ I was unsure if the Fisher Yates model on w3schools was technically in es6 synta
 
 w3schools Array Sorting Page & the "try it yourself": https://www.w3schools.com/js/js_array_sort.asp
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_sort_random2
+
+I had no issues, besides a little trial & error with the JavaScript.
