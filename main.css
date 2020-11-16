@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: url("img/friends.jpg") top no-repeat;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+  color: #161616;
+}
+
+h1 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+}
+
+button {
+  background-color: #161616;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 5px white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: white;
+  color: #161616;
+  box-shadow: 5px 5px 5px #161616;
+  transition: .2s;
+}
