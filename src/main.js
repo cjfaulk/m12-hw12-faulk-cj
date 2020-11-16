@@ -1,4 +1,4 @@
-let quotes = [
+const quotes = [
   "Pivot! Pivot! Pivot! -Ross",
   "They don’t know that we know they know we know!” -Pheobe",
   "How you doin? - Joey",
@@ -13,6 +13,7 @@ let quotes = [
 
 document.getElementById("quote-button").addEventListener("click", quoteRandomizer);
 
+// Fisher Yates Model from w3schools
 // function quoteRandomizer() {
 //   var i, j, k;
 //     for (i = quotes.length -1; i > 0; i--) {
@@ -24,6 +25,7 @@ document.getElementById("quote-button").addEventListener("click", quoteRandomize
 //     document.getElementById("quote-insert").innerHTML = quotes[0];
 // };
 
+// Fisher Yates in ES6 syntax (from Stack Overflow)
 function quoteRandomizer() {
   for (let i = quotes.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
