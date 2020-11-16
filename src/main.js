@@ -1,4 +1,4 @@
-const quotes = [
+let quotes = [
   "Pivot! Pivot! Pivot! -Ross",
   "They don’t know that we know they know we know!” -Pheobe",
   "How you doin? - Joey",
@@ -11,14 +11,23 @@ const quotes = [
   "I can handle this. ‘Handle’ is my middle name. Actually, ‘handle’ is the middle of my first name. -Chandler"
 ];
 
+document.getElementById("quote-button").addEventListener("click", quoteRandomizer);
+
+// function quoteRandomizer() {
+//   var i, j, k;
+//     for (i = quotes.length -1; i > 0; i--) {
+//       j = Math.floor(Math.random() * i)
+//       k = quotes[i]
+//       quotes[i] = quotes[j]
+//       quotes[j] = k
+//     }
+//     document.getElementById("quote-insert").innerHTML = quotes[0];
+// };
 
 function quoteRandomizer() {
-  var i, j, k;
-    for (i = quotes.length -1; i > 0; i--) {
-      j = Math.floor(Math.random() * i)
-      k = quotes[i]
-      quotes[i] = quotes[j]
-      quotes[j] = k
-    }
-    document.getElementById("quote-insert").innerHTML = quotes[0];
+  for (let i = quotes.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [quotes[i], quotes[j]] = [quotes[j], quotes[i]];
+  }
+  document.getElementById("quote-insert").innerHTML = quotes[0];
 };
